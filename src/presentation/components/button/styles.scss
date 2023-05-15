@@ -1,0 +1,41 @@
+@import "../../styles/colors.scss";
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-top: 1rem;
+
+  .icon {
+    position: absolute;
+    left: 0;
+  }
+
+  button {
+    padding: 1rem 2rem;
+    background-color: $primary-light;
+    font-size: 1.2rem;
+    color: $white;
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+    transition: all .2s;
+
+    &:disabled {
+      background-color: $grey-light;
+    }
+
+    &:active {
+      transform: translateY(-2px);
+    }
+
+    &:hover {
+      background-color: $primary;
+      cursor: pointer;
+    }
+
+    .color--primary {
+      background-color: $primary;
+    }
+  }
+}
