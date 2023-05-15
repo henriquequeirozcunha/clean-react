@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import S from './styles.scss'
 
 import Spinner from '@/presentation/components/spinner'
@@ -10,13 +10,27 @@ export type FormLoginProps = {
 }
 
 const FormLogin = ({ user }: FormLoginProps) => {
+  const [loading, setLoading] = useState(false)
+
+  const handleSubmit = () => {
+    console.log('submit')
+    setLoading(true)
+
+    setTimeout(() => setLoading(false), 1000)
+  }
+
   return (
     <div className={S.container}>
-      <h1>FORM LOGIN</h1>
+      <form>
+        <h1>FORM LOGIN</h1>
 
-      <Input type='email' name='email' placeholder='Digite seu email' />
+        <Input type='email' name='email' placeholder='Digite seu email' />
+        <Input type='password' name='password' placeholder='Digite sua senha' />
 
-      <Spinner />
+        <button type="submit" onClick={handleSubmit}>Sign in</button>
+
+        {loading && <Spinner />}
+      </form>
     </div>
   )
 }

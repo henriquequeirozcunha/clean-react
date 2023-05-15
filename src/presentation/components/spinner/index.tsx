@@ -3,7 +3,7 @@ import S from './styles.scss'
 
 const Spinner = () => {
   return (
-    <div className={S.spinner}><div></div><div></div><div></div><div></div></div>
+    <div data-test-id="spinner" className={S.spinner}><div></div><div></div><div></div><div></div></div>
   )
 }
 

@@ -1,5 +1,12 @@
+@import "../../styles/colors.scss";
+
 .container {
     min-height: 10rem;
-    max-width: 30rem;
+    width: 40rem;
     margin: auto;
+
+    background-color: $white;
+
+    padding: 5rem;
+    border-radius: 5px;
 }

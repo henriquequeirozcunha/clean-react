@@ -14,6 +14,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.0.0",
     "@types/jest": "^26.0.20",
     "@types/node": "^14.14.31",
     "@types/react": "^18.2.6",
@@ -32,6 +34,8 @@
     "git-commit-msg-linter": "^3.0.0",
     "husky": "^5.0.9",
     "identity-obj-proxy": "^3.0.0",
+    "jest": "^26.6.3",
+    "jest-environment-jsdom": "^26.6.2",
     "lint-staged": "^10.5.4",
     "node-sass": "^8.0.0",
     "sass-loader": "^13.2.2",
@@ -46,6 +50,7 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-hook-form": "^7.43.9",
     "react-router-dom": "^5.3.4"
   }
 }
