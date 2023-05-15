@@ -3,6 +3,7 @@ import S from './styles.scss'
 
 import Spinner from '@/presentation/components/spinner'
 import { User } from '@/core/domain/models'
+import Input from '@/presentation/components/input'
 
 export type FormLoginProps = {
   user?: User
@@ -11,7 +12,9 @@ export type FormLoginProps = {
 const FormLogin = ({ user }: FormLoginProps) => {
   return (
     <div className={S.container}>
-        FORM LOGIN
+      <h1>FORM LOGIN</h1>
+
+      <Input type='email' name='email' placeholder='Digite seu email' />
 
       <Spinner />
     </div>
