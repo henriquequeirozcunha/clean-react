@@ -66,7 +66,7 @@ const FormLogin = ({ user }: FormLoginProps) => {
 
     await dispatch(getUserAsync({ email: state.email }))
 
-    history.push('/home')
+    history.push('/sign-up')
   }
 
   const handleChange = (e: React.FocusEvent<HTMLInputElement>): void => {
