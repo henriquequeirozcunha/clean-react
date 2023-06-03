@@ -1,0 +1,17 @@
+@import "../../styles/colors.scss";
+
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+
+    .content {
+        flex: 1;
+        background-color: red;
+    }
+
+    .footer {
+        background-color: $primary;
+    }
+}
